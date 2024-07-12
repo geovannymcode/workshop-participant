@@ -28,6 +28,42 @@ Estamos usando Java 21 ya que las bibliotecas más recientes de Spring Boot pued
 
 No olvides configurar la variable de entorno JAVA_HOME y actualizar el PATH.
 
+## Configuración de JAVA_HOME y PATH
+### Windows
+1. Abre la consola y escribe el comando `set`. Deberías encontrar la variable de entorno `JAVA_HOME` que debería mostrar la carpeta donde se instaló Java. El `PATH` debe incluir la ruta completa a la carpeta `bin` dentro de la carpeta de Java.
+```sh
+JAVA_HOME=C:\devapp\jdk-21.0.0
+PATH=%JAVA_HOME%\bin;%PATH%
+```
+
+2. Si estas variables faltan, deben configurarse manualmente en el diálogo de Variables de Entorno. En Windows 10 o 11, ingresa `environment` en el cuadro de búsqueda de la barra de tareas y selecciona "Editar las variables de entorno del sistema". Aquí puedes agregar o corregir `JAVA_HOME` y `PATH`.
+
+### Linux
+1. Usa el comando `printenv` para verificar `JAVA_HOME` y `PATH`. Si faltan o el valor asignado es incorrecto, abre un editor de texto y abre tu archivo `.profile` en tu directorio home. Agrega la siguiente línea reemplazando `JAVA_HOME` con la ubicación donde instalaste Java.
+
+```sh
+export JAVA_HOME=/home/javadev/java/jdk-21.0.0
+```
+
+2. Si `PATH` es incorrecto, agrega esta línea a `.profile`.
+
+```sh
+export PATH=\$JAVA_HOME/bin:\$PATH
+```
+
+### macOS
+1. Usa el comando `printenv` para verificar `JAVA_HOME` y `PATH`. Si faltan o el valor asignado es incorrecto, abre un editor de texto y abre tu archivo `.bash_profile` en tu directorio home. Agrega la siguiente línea reemplazando `JAVA_HOME` con la ubicación donde instalaste Java.
+
+```sh
+export JAVA_HOME=/Users/javadev/java/jdk-21.0.0/Contents/Home
+```
+
+2. Si PATH es incorrecto, agrega esta línea a .profile.
+
+```bash
+export PATH=\$JAVA_HOME/bin:\$PATH
+```
+
 ## Maven
 Todo el código de muestra está organizado para usarse con la herramienta de construcción Apache Maven. La mayoría de los IDEs incluyen Maven, por lo que si estás utilizando uno, puede que no consideres necesario descargar e instalar la versión de línea de comandos. Sin embargo, es necesario. Puedes descargar Maven desde [Apache Maven](https://maven.apache.org/download.cgi). Al igual que cURL y Docker, se distribuye como un archivo comprimido que puedes descomprimir en cualquier lugar. También debes agregar la ruta a la carpeta bin. Se recomienda usar la versión más reciente.
 
@@ -61,4 +97,6 @@ Para este taller, necesitarás incluir las siguientes dependencias en tu proyect
 
 ## Enlaces útiles
 * [Spring initialzr](https://start.spring.io/) - Generador de proyectos Spring Boot, donde puedes configurar y descargar tu proyecto inicial con las dependencias necesarias.
-Este taller te proporcionará las habilidades y conocimientos necesarios para integrar PayPal en tus aplicaciones Spring Boot, siguiendo prácticas recomendadas y utilizando las herramientas más relevantes. ¡Te esperamos para aprender y mejorar juntos!
+
+## Conclusión
+Este taller te proporcionará las habilidades y conocimientos necesarios para integrar PayPal en tus aplicaciones Spring Boot, siguiendo prácticas recomendadas y utilizando las herramientas más relevantes. A lo largo del taller, no solo aprenderás a realizar una integración técnica, sino también a aplicar buenas prácticas que te ayudarán a crear aplicaciones más eficientes, seguras y mantenibles. ¡Te esperamos para aprender y mejorar juntos!
