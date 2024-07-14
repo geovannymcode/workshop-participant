@@ -1,5 +1,9 @@
 # Integración de Spring Boot con PayPal y Buenas Prácticas
 
+## Descripción del Taller
+
+En este taller interactivo, aprenderás paso a paso cómo integrar la plataforma de pagos `PayPal` en aplicaciones desarrolladas con Spring Boot. Abordaremos las técnicas necesarias para manejar pagos en línea de manera segura y eficiente, un requisito esencial para cualquier negocio digital. Adicionalmente, exploraremos cómo mejorar el rendimiento de tu aplicación mediante el uso de caching con `Redis`, cómo personalizar tu aplicación creando anotaciones con Spring Aspect-Oriented Programming `(AOP)`, y cómo garantizar la calidad de tu software a través de pruebas efectivas en Spring. Estas habilidades son cruciales para construir aplicaciones comerciales robustas y escalables.
+
 * [Modulo 1: Configuración del Entorno](mod_01_configuracion_entorno/README.md)
 * Modulo 2: Creación de CRUD
     - [Book](mod_02_book/README.md)
