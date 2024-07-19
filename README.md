@@ -19,3 +19,5 @@ Módulos del Taller:
 * [Module 7: Testing BookStore](mod_07_testing/README.md)
 * [Module 8: Tips Desarrollo](mod_08_tips_desarrollo/README.md)
 * [Module 9: Envio Email](mod_09_envio_email/README.md)
+
+Acceso al taller: https://geovannymcode.github.io/geolabs-bookstore.github.io/
